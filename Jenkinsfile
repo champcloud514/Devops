@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "akwasi84/ecommerce-app"
+        DOCKER_IMAGE = "akwasi84/my-ecommerce-app"
     }
     stages {
         stage('Fetch Code') {
