@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mydeployment
+spec:
+  selector:
+    matchLabels:
+      app: mypod
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: mypod
+    spec:
+      containers:
+      - name: myapp
+        image: akwasi84/mywebapp:latest
